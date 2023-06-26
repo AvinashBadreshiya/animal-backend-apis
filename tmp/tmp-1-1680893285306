@@ -1,0 +1,10 @@
+[user]
+	email = 120706675+dinkaldonda@users.noreply.github.com
+	name = dinkaldonda
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[credential "https://git.rejoicehub.com"]
+	provider = generic
